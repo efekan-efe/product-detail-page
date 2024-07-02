@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.topdonPageContent {
+  font-family: "Poppins", sans-serif;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+.topdonMainTitle {
+  text-align: center;
+  background-color: #232326;
+  color: #fff;
+  padding: 0.5rem 0;
+  font-size: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.topdonMainTitle::before,
+.topdonMainTitle::after {
+  content: "";
+  background-color: #2866b1;
+  width: 25%;
+  height: 0.25rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.topdonMainTitle::after {
+  left: unset;
+  right: 0;
+}
+.topdonMainTitle--blue {
+  color: #2866b1;
+  font-weight: 800;
+}
+.productImgContent {
+  text-align: center;
+  max-width: 25rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+.productImg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* Grid Boxes */
+
+.productFeatureBoxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.productFeatureBox {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #232326;
+  min-height: 250px;
+  box-shadow: 10px 10px 0px #2866b1;
+}
+.productFeatureBoxImgContent {
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  max-width: 64px;
+  max-height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productFeatureBoxImg {
+  width: 100%;
+  height: 100%;
+}
+.productFeatureBoxTitle {
+  color: #2866b1;
+}
+.productFeatureBoxDesc {
+  font-size: 14px;
+  color: #fff;
+}
+.topdonImgSide,
+.topdonInfoSide {
+  width: 100%;
+  height: 100%;
+}
+.topdonContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem auto;
+}
+.topdonInfoTitle {
+  font-size: 35px;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+.topdonInfoDesc {
+  line-height: 1.5;
+}
+.topdonImgContent {
+  min-width: 550px;
+  min-height: 270px;
+  box-shadow: 10px 10px 0px #2866b1;
+}
+.topdonImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+}
